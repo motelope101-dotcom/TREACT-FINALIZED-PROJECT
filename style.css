@@ -950,7 +950,8 @@ div {
 }
 
 
-.feature__img--wrapper {
+
+.feature__img--wrapper{
     display: flex;
     padding: 20px;
     border: 1px solid #e5e7eb;
@@ -1330,6 +1331,10 @@ img {
 
 
 
+
+
+
+
 /* 
 
 STEPS ↓
@@ -1373,12 +1378,10 @@ div {
 }
 
 
-#Steps .row {
-
-#Steps .row {
+#steps , .row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
 }
 
 .row {
@@ -1404,13 +1407,7 @@ div {
 }
 
 
-.steps__img--wrapper{
-      width: 50%;
-      display: flex;
-      position: relative;
-      margin:0 auto;
-
-.steps__img--wrapper{
+.step__img--wrapper{
       width: 50%;
       display: flex;
       position: relative;
@@ -1447,7 +1444,7 @@ figure {
 }
 
 img {
-    width: 100%;
+    width: 80%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -1514,8 +1511,7 @@ div {
     margin: 16px 0;
     letter-spacing: 0.025em;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter" , sans-serif;
+    box-sizing: right;
     font-family: "Inter" , sans-serif;
 }
 
@@ -1657,6 +1653,7 @@ p{
     margin-inline-end: 0px;
     unicode-bidi: isolate;
 }
+
 
 
 
@@ -2105,9 +2102,6 @@ img {
 
 
 
-
-
-
 /*
 
 PRICING ↓
@@ -2127,6 +2121,8 @@ section {
     color:#243e63;
     display: block;
     unicode-bidi: isolate;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -2136,37 +2132,19 @@ section {
     box-sizing: border-box;
     font-family: "Inter" , sans-serif;
     color:#243e63;
-    font-family: "Inter" , sans-serif;
-    color:#243e63;
+    unicode-bidi: isolate;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-
 div {
     display: block;
     unicode-bidi: isolate;
 }
 
-
-#Pricing .row {
-#Pricing .row {
+#pricing .row {
     display: flex;
-    justify-content: space-between;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.row {
-    width:100%;
-    max-width:1280px;
-    margin:0 auto;
-    width:100%;
-    max-width:1280px;
-    margin:0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter" , sans-serif;
-    color:#243e63;
-    font-family: "Inter" , sans-serif;
-    color:#243e63;
+    flex-direction: column;
 }
 
 
@@ -2191,24 +2169,11 @@ div {
     font-family: "Inter" , sans-serif;
     font-family: "Inter" , sans-serif;
 }
-
-div {
 div {
     display: block;
     unicode-bidi: isolate;
 }
 
-
-#Pricing .section__title {
-    margin-top:16px;  
-    margin-bottom:32px; 
-}
-
-
-#Pricing .section__title {
-    margin-top:16px;  
-    margin-bottom:32px; 
-}
 
 .section__title {
     font-size: 48px;
@@ -2246,31 +2211,25 @@ h2 {
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter" , sans-serif;
-    font-family: "Inter" , sans-serif;
 }
 
 
-
-
-
-#pricing .section__para {
+#pricing.section__para {
+    display: flex;
+    margin-bottom: 60px;
+    padding: 20px;
     max-width: 576px;
     text-align: center;
-}
-
-.section__para {
     font-size: 18px;
     font-weight: 500;
     color: #7c8ba1;
     line-height: 1.625;
-     margin: 0;
+}
+
+p { margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    color: #243e63;
-}
-
-p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -2287,6 +2246,7 @@ p {
     display: flex;
     position: relative;
     flex-direction: row;
+    gap: 20px;
     width: 100%;
     justify-content: space-between;
     margin: 0;
@@ -2301,14 +2261,11 @@ div {
 }
 
 
-
-
 .plan {
     position: relative;
     margin-top: 4rem;
-    display: flex
-    width 100%;
-    width 100%;
+    display: flex;
+    width: 100%;
     max-width: 24rem;
     flex-direction: column;
     border-radius: 0.5rem;
@@ -2323,18 +2280,18 @@ div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif; 
+}
+
+div {
+    unicode-bidi: isolate;
 }
 
 
-
-.plan:nth-child(1) .plan__stripe {
-.plan:nth-child(1) .plan__stripe {
-    color: #f7fafc;
-    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-}
 
 .plan__stripe {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
     position: absolute;
     left: 0px;
     right: 0px;
@@ -2373,12 +2330,9 @@ div {
 }
 
 
-.plan:nth-child(odd) .plan__name {
 
-.plan:nth-child(odd) .plan__name {
-    color: #1a202c;
-}
 .plan__name {
+    color: #1a202c;
     font-size: 20px;
     font-weight: bold;
     line-height: 1.625;
@@ -2394,17 +2348,8 @@ div {
 }
 
 
-
-.plan:nth-child(odd) .plan__price {
-    color: #1a202c;
-}
 .plan__price {
-
-
-.plan:nth-child(odd) .plan__price {
     color: #1a202c;
-}
-.plan__price {
     font-weight: bold;
     line-height: 1.625;
     padding: 0;
@@ -2418,10 +2363,8 @@ div {
 }
 
 
-.plan:nth-child(odd) .plan__duration {
-    color: #a0aec0;
-}
 .plan__duration {
+    color: #a0aec0;
     font-size: 16px;
     letter-spacing: 0.1em;
     font-weight: bold;
@@ -2442,13 +2385,9 @@ div {
 }
 
 
-.plan:nth-child(1) .plan__middle {
-
-.plan:nth-child(1) .plan__middle {
+.plan__middle {
     border-top: 2px solid rgb(229, 231, 235);
     border-bottom: 2px solid rgb(229, 231, 235);
-}
-.plan__middle {
     margin-left: -2rem;
     margin-right: -2rem;
     display: flex;
@@ -2467,13 +2406,8 @@ div{
 }
 
 
-.plan:nth-child(odd) .plan__target {
-
-.plan:nth-child(odd) .plan__target {
-    color: #1a202c;
-}
-
 .plan__target {
+    color: #1a202c;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
@@ -2534,18 +2468,9 @@ div {
 
 
 
-.plan:nth-child(1) .plan__button {
-
-
-.plan:nth-child(1) .plan__button {
+.plan__button {
     color: #f7fafc;
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-}
-
-
-.plan__button {
-    max-width: none;
-.plan__button {
     max-width: none;
     padding: 0.75rem 2rem;
     font-weight: 700;
@@ -2568,24 +2493,9 @@ button{
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     margin: 0;
-      box-sizing: border-box;
-      font-family: "Inter" , sans-serif;
-      appearance: auto;
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal; 
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow:none;
-    display:inline-block;
-    text-align: center;
-    padding-block:1px;
-    padding-inline: 6px; 
-}
-      box-sizing: border-box;
-      font-family: "Inter" , sans-serif;
-      appearance: auto;
+    box-sizing: border-box;
+    font-family: "Inter" , sans-serif;
+    appearance: auto;
     text-rendering: auto;
     letter-spacing: normal;
     word-spacing: normal; 
@@ -3428,9 +3338,10 @@ MOBILE RESPONSIVENESS ↓
 }
 
 @media(max-width: 640px) {
-    .container {
+       }.container {
         padding: 80px 0;
-    }
+}
+    
     .nav__logo {
         margin: 8px 0;
         padding-bottom: 4px;
@@ -3438,5 +3349,3 @@ MOBILE RESPONSIVENESS ↓
     main {
         margin-bottom: 80px;
     }
-}
-
